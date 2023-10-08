@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+}
+
+:root {
+  --primary: #fb9e00;
+  --bg: #fff;
+}
+
+body {
+  background-color: #fff;
+  color: #000000;
+  min-height: 2000px;
+}
+
+/* navbar */
+.navigasi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: var(--primary);
+  border-bottom: 0.5px solid rgb(219, 172, 102);
+  position: fixed;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  box-shadow: -3px 3px 13px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 3px 13px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 3px 13px -6px rgba(0, 0, 0, 0.75);
+}
+
+.navigasi .navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a0b0b;
+  text-decoration: none;
+}
+
+.navigasi .navbar-logo span {
+  color: #894701;
+}
+
+.navigasi .navbar-navi a {
+  color: #000000;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.navigasi .navbar-navi a::after {
+  content: "";
+  display: block;
+  padding-bottom: 1, 5rem;
+  border-bottom: 0.1rem solid;
+  color: #1a0b0b;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navigasi .navbar-navi a:hover::after {
+  transform: scaleX(0.5);
+}
+
+/* hero section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(leone-venter-VieM9BdZKFo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  margin-top: 3%;
+}
+
+.hero .content {
+  padding: 1.8rem 7%;
+  max-width: 48rem;
+}
+
+.hero .content h1 {
+  font-size: 5em;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5%);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.hero .content h1 span {
+  color: #fb9e00;
+}
+
+.hero .content p {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.7%);
+  margin-bottom: 15px;
+}
+
+.butnhome {
+  padding: 15px;
+  background-color: #fb9e00;
+  margin-top: 30px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 700;
+  box-shadow: -3px 3px 13px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -3px 3px 13px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -3px 3px 13px -6px rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+  color: rgb(237, 221, 221);
+  margin-right: 15px;
+}
+
+/* hero section end */
+
+/* about section */
+.about {
+  padding: 6rem 7% 1.4rem;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.about h2 span {
+  color: #fb9e00;
+}
+
+.about .row {
+  display: flex;
+}
+
+.about .row .wrapper {
+  align-items: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.about .row h3 {
+  font-weight: 700;
+}
+
+.about .row p {
+  font-weight: 400;
+}
+
+/* project section */
+.contain {
+  padding: 1.8rem 7%;
+}
+
+#project h2 {
+  text-align: left;
+}
+
+/* contactme section */
+#contactme .kontak {
+  color: #fff;
+}
+
+/* footer */
+.footer {
+  height: 45vh;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(180, 177, 177);
+  border-top-radius: 10px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.footer .footer-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+.alamat h6 {
+  padding-top: 10px;
+  /* padding-bottom: 15px;  */
+  color: black;
+  font-family: "poppins";
+  font-weight: 400;
+}
+
+.containicon {
+  display: flex;
+}
+
+.icn {
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+/* copyrigt */
+.copyright {
+  height: 5vh;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 1.4rem;
+  background-color: black;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  color: #fff;
+}
